@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/avaliar.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<title>Avalie esta página</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="index.html" style="color: white;">Página Inicial</a>
+          <a class="navbar-brand" href="todas_receitas.html" style="color: white;">Todas as Receitas</a>
+          <a class="navbar-brand" href="#" style="color: white;">Suporte</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="color: white;"> Minha Conta <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" >
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="background-color: white;"></button>
+            </div>
+            <div class="offcanvas-body" >
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="perfil.html" style="color: white;">Meu Perfil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lista_desejo.html" style="color: white;">Lista de Desejos</a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lista_feitos.html" style="color: white;">Lista de "Já Feitos"</a>
+            </li>
+    <li class="nav-item">
+      <a class="nav-link" href="minhas_receitas.html" style="color: white;">Minhas Receitas</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="login.html" style="color: white;">Sair</a>
+    </li>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="limiter">
+        <div class="container_login">
+
+      <div class="rating_star">
+        <a href="javascript:void(0)" onclick="Avaliar(1)">
+        <img src="images/icons/star_empty.png" class="star" id="s1"></a>
+
+        <a href="javascript:void(0)" onclick="Avaliar(2)">
+        <img src="images/icons/star_empty.png" class="star" id="s2"></a>
+
+        <a href="javascript:void(0)" onclick="Avaliar(3)">
+        <img src="images/icons/star_empty.png" class="star" id="s3"></a>
+
+        <a href="javascript:void(0)" onclick="Avaliar(4)">
+        <img src="images/icons/star_empty.png" class="star" id="s4"></a>
+
+        <a href="javascript:void(0)" onclick="Avaliar(5)">
+        <img src="images/icons/star_empty.png" class="star" id="s5"></a>
+        <p id="rating">0</p>
+
+
+<div class="wrap_login">
+    <form class="login_form validate-form">
+
+        <div class="wrap_input validate-input" data-validate = "Comentario">
+            <input class="input" type="text" name="Comentario" placeholder="Comentário">
+            <span class="focus_input" data-placeholder="&#xf207;"></span>
+        </div>
+        
+    </form>
+</div>
+<br><br>
+<div class="container_login_form_btn">
+    <button class="login_form_btn">
+        Avaliar
+    </button>
+</div>
+
+      </div>
+      
+        </div>
+      </div>
+
+<script src="js/avaliar.js"></script>
+</body>
+</html>
