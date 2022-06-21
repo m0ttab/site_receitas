@@ -1,108 +1,29 @@
-/*[ FONT ]*/
-
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
-}
-
-/*[ RESTYLE TAG ]*/
-
-* {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
-}
-
-body, html {
-	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
-}
-
 a {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #ffae18;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffae18;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 
-a:focus {
-	outline: none !important;
-}
-
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
   color: #ff1869;
 }
-
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
-}
-
 p {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-}
-
-input {
-	outline: none;
-	border: none;
-}
-
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
-
-input::-webkit-input-placeholder { color: #fff;}
-input:-moz-placeholder { color: #fff;}
-input::-moz-placeholder { color: #fff;}
-input:-ms-input-placeholder { color: #fff;}
-
-textarea::-webkit-input-placeholder { color: #fff;}
-textarea:-moz-placeholder { color: #fff;}
-textarea::-moz-placeholder { color: #fff;}
-textarea:-ms-input-placeholder { color: #fff;}
-
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
-
-button:hover {
-	cursor: pointer;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
 }
 
 /*[ Utility ]*/
 
-.criar_conta {
+.links {
   font-family: Poppins-Regular;
   font-size: 15px;
   color: #ffffff;
@@ -115,51 +36,18 @@ button:hover {
   width: 100%;
 }
 
-.container_login{
-  width: 100%;  
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;  
-}
-
-.wrap_login {
-  width: 500px;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 55px 55px 37px 55px;
-
-  background: #ff1869;
-  background: -webkit-linear-gradient(top, #ff1869, #ffae18);
-  background: -o-linear-gradient(top, #ff1869, #ffae18);
-  background: -moz-linear-gradient(top, #ff1869, #ffae18);
-  background: linear-gradient(top, #ff1869, #ffae18);
-}
-
 /*[ Form ]*/
 
-.login_form {
-  
+.form_receita {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.login_logo {
-  font-size: 60px; 
+.receita_logo {
+  font-size: 60px;
   color: #333333;
 
   display: -webkit-box;
@@ -176,7 +64,7 @@ button:hover {
   margin: 0 auto;
 }
 
-.login_title {
+.receita_title {
   font-family: Poppins-Medium;
   font-size: 30px;
   color: #fff;
@@ -201,16 +89,3 @@ button:hover {
   color: white;
   width: 300px;
 }
-
-
-/*[ Responsive ]*/
-
-@media (max-width: 576px) {
-  .wrap_login {
-    padding: 55px 15px 37px 15px;
-  }
-}
-
-
-
-
