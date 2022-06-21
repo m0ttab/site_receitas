@@ -1,77 +1,37 @@
-#searchbar{
-    padding:15px;
-    border-radius: 10px;
-  }
+input[type=text] {
+  width: 100%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
 
-  input[type=text] {
-     width: 100%;
-     -webkit-transition: width 0.15s ease-in-out;
-     transition: width 0.15s ease-in-out;
-  }
+.divdiv {
+  margin: 50px;
+}
 
- #datalistOptions{
-   font-size:  1.5em;
-   margin-left: 90px;
-  }
+.navbar {
 
-.animals{
-  display: list-item;    
- } 
+  background: #ff1869;
+  background: -webkit-linear-gradient(top, #ff1869, #ffae18);
+  background: -o-linear-gradient(top, #ff1869, #ffae18);
+  background: -moz-linear-gradient(top, #ff1869, #ffae18);
+  background: linear-gradient(top, #ff1869, #ffae18);
+}
 
- .limiter {
-    width: 100%;
-    margin: 0 auto;
-  }
+.offcanvas {
 
-  .uiui{
-    margin: 50px;
-  }
+  background: #ff1869;
+  background: -webkit-linear-gradient(top, #ff1869, #ffae18);
+  background: -o-linear-gradient(top, #ff1869, #ffae18);
+  background: -moz-linear-gradient(top, #ff1869, #ffae18);
+  background: linear-gradient(top, #ff1869, #ffae18);
+}
 
+.card {
+  margin: 10px;
+  width: 220px;
+}
 
-  .container_login{
-    width: 100%;  
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;  
-  }
-
-  .navbar{
-
-    background: #ff1869;
-    background: -webkit-linear-gradient(top, #ff1869, #ffae18);
-    background: -o-linear-gradient(top, #ff1869, #ffae18);
-    background: -moz-linear-gradient(top, #ff1869, #ffae18);
-    background: linear-gradient(top, #ff1869, #ffae18);
-  }
-
-  .offcanvas{
-
-    background: #ff1869;
-    background: -webkit-linear-gradient(top, #ff1869, #ffae18);
-    background: -o-linear-gradient(top, #ff1869, #ffae18);
-    background: -moz-linear-gradient(top, #ff1869, #ffae18);
-    background: linear-gradient(top, #ff1869, #ffae18);
-  }
-
-  .card{
-    margin: 10px;
-    width: 220px;
-  }
-
-  .a{
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+.card-group {
+  padding-left: 50px;
+  padding-right: 50px;
+}
