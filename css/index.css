@@ -1,24 +1,49 @@
-#searchbar {
-  padding: 15px;
+#searchbar{
+  padding:15px;
   border-radius: 10px;
 }
 
 input[type=text] {
+   width: 100%;
+   -webkit-transition: width 0.15s ease-in-out;
+   transition: width 0.15s ease-in-out;
+}
+
+#datalistOptions{
+ font-size:  1.5em;
+ margin-left: 90px;
+}
+
+.animals{
+display: list-item;    
+} 
+
+.limiter {
   width: 100%;
-  -webkit-transition: width 0.15s ease-in-out;
-  transition: width 0.15s ease-in-out;
+  margin: 0 auto;
 }
 
-#datalistOptions {
-  font-size: 1.5em;
-  margin-left: 90px;
+.container_login{
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;  
 }
 
-.animals {
-  display: list-item;
-}
-
-.wrap_div {
+.wrap_login {
   width: 800px;
   border-radius: 10px;
   overflow: hidden;
@@ -31,9 +56,18 @@ input[type=text] {
   background: -o-linear-gradient(top, #ff1869, #ffae18);
   background: -moz-linear-gradient(top, #ff1869, #ffae18);
   background: linear-gradient(top, #ff1869, #ffae18);
+}  
+
+.navbar{
+
+  background: #ff1869;
+  background: -webkit-linear-gradient(top, #ff1869, #ffae18);
+  background: -o-linear-gradient(top, #ff1869, #ffae18);
+  background: -moz-linear-gradient(top, #ff1869, #ffae18);
+  background: linear-gradient(top, #ff1869, #ffae18);
 }
 
-.navbar {
+.offcanvas{
 
   background: #ff1869;
   background: -webkit-linear-gradient(top, #ff1869, #ffae18);
@@ -42,11 +76,3 @@ input[type=text] {
   background: linear-gradient(top, #ff1869, #ffae18);
 }
 
-.offcanvas {
-
-  background: #ff1869;
-  background: -webkit-linear-gradient(top, #ff1869, #ffae18);
-  background: -o-linear-gradient(top, #ff1869, #ffae18);
-  background: -moz-linear-gradient(top, #ff1869, #ffae18);
-  background: linear-gradient(top, #ff1869, #ffae18);
-}
