@@ -1,32 +1,35 @@
-use siterec;
+USE siterec;
 
-drop table if exists receitas;
+DROP TABLE if exists receitas;
 
-create receitas (
-    nome VARCHAR(100),
-    autor VARCHAR(100),
-    tempo_preparo INT,
-    tipo VARCHAR(50),
-    ingredientes VARCHAR(600),
-    pais VARCHAR(80),
-    modo_preparo VARCHAR(800),
-    aviso_alergicos CHAR(1),
-    foto VARCHAR
+CREATE TABLE receitas (
+    id INT AUTO-INCREMENT NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    tempo_preparo INT NOT NULL,
+    tipo VARCHAR(50) NOT NULL,
+    ingredientes VARCHAR(600) NOT NULL,
+    pais VARCHAR(80) NOT NULL,
+    modo_preparo VARCHAR(800) NOT NULL,
+    aviso_alergicos CHAR(1) NOT NULL,
+    foto VARCHAR NOT NULL
     );
 
-drop table if exists usuarios;
+DROP TABLE if exists usuarios;
 
-create usuarios (
-    nome VARCHAR(100),
-    nickname VARCHAR(100),
-    senha VARCHAR(15),
-    genero CHAR(3),
-    cidade VARCHAR(80),
-    pais VARCHAR(80),
-    pref_alimentar CHAR(4),
-    cond_alimentar_esp VARCHAR(200),
-    foto VARCHAR
+CREATE TABLE usuarios (
+    nome VARCHAR(100) NOT NULL,
+    nickname VARCHAR(100) NOT NULL,
+    senha VARCHAR(15) NOT NULL,
+    genero CHAR(3) NOT NULL,
+    cidade VARCHAR(80) NOT NULL,
+    pais VARCHAR(80) NOT NULL,
+    pref_alimentar CHAR(4) NOT NULL,
+    cond_alimentar_esp VARCHAR(200) NOT NULL,
+    foto VARCHAR NOT NULL
     );
+    
+DROP TABLE if exists avaliacoes;
     
 CREATE TABLE avaliacoes(
     id numeric AUTO-INCREMENT NOT NULL,
@@ -37,10 +40,14 @@ CREATE TABLE avaliacoes(
     comentario varchar(300) NOT NULL
 )
 
+DROP TABLE if exists comidas;
+
 CREATE TABLE comidas(
     id numeric AUTO-INCREMENT NOT NULL,
     nome varchar(300) NOT NULL
 )
+
+DROP TABLE if exists bebidas;
 
 CREATE TABLE bebidas(
     id numeric AUTO-INCREMENT NOT NULL,
